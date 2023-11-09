@@ -9,3 +9,9 @@ To run the service, you need to have [Docker](https://www.docker.com/) installed
 ```bash
 $ docker run -p 8080:8080 rootxrishabh/grpcmail:0.1.0
 ```
+
+### Calling the gRPC Service
+
+```bash
+$ grpcurl -plaintext localhost:8080 Inbox/GetEmails
+```
